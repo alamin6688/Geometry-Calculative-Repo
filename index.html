@@ -43,12 +43,26 @@
                 </div>
                 <!-- Rectangle  Card-->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title mx-auto">Rectangle</h2>
+                      <p class="text-center mb-0 text-xl">
+                        Area (A) = w x I
+                      </p>
+                      <div class="mb-4">
+                        <input id="triangle-base" class="w-24 text-2xl p-2 rounded-lg" type="text" placeholder="length">
+                        <span class="mr-4 ml-2">cm</span>
+                        <input id="triangle-height" class="w-24 text-2xl p-2 rounded-lg" type="text" placeholder="width">
+                        <span class="mr-4 ml-2">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">
+                          Area: <span id="triangle-area"></span>
+                                <span>cm<sup>2</sup></span>
+                        </p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="CalculateRectangleArea()" class="btn btn-primary text-xl text-white w-full">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -82,5 +96,6 @@
         </div>
     </main>
     <script src="scripts/triangle.calculate.js"></script>
+    <script src="scripts/rectangle.calculate.js"></script>
 </body>
 </html>
